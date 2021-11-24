@@ -1,0 +1,149 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: suggest_entertainment
+  examples: |
+    - I would like to watch a [movie](category)
+    - suggest a [movie](category)
+    - tell me a [movie](category) to watch
+    - help me with a [movie](category) suggestion
+    - suggest a [movie](category) title
+    - I want a [movie](category) suggestion
+    - can you suggest a [movie](category)
+    - can you help me pick a [movie](category)
+    - what [movie](category) should I watch
+    - What [movie](category) can you suggest
+    - show me a [movie](category)
+    - [movie](category) for tonight
+    - [movie](category) for the day
+    - [movie](category) for today
+    - I would like to watch a [TV show](category)
+    - suggest a [TV show](category)
+    - tell me a [TV show](category) to watch
+    - help me with a [TV show](category) suggestion
+    - suggest a [TV show](category) title
+    - I want a [TV show](category) suggestion
+    - can you suggest a [TV show](category)
+    - can you help me pick a [TV show](category)
+    - what [TV show](category) should I watch
+    - What [TV show](category) can you suggest
+    - show me a [TV show](category)
+    - [TV show](category) for tonight
+    - [TV show](category) for the day
+    - [TV show](category) for today
+- intent: weather
+  examples: |
+    - what's the weather
+    - i want to know the today's weather
+    - tell me the weather forcast
+    - how's the weather today
+    - show me the weather forcast\
+    - whats the weather like today
+- intent: city
+  examples: |
+    - Delhi
+    - delhi
+    - mumbai
+    - chennai
+    - bangalore
+    - mysore
+- synonym: movie
+  examples: |
+    - movies
+    - film
+    - flick
+    - picture
+    - motion picture
+- synonym: TV show
+  examples: |
+    - tv
+    - tv show
+    - series
+    - show
+    - program
+- lookup: category
+  examples: |
+    - movie
+    - TV show

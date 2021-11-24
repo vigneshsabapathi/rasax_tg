@@ -1,0 +1,57 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- suggest_entertainment(category):
+    use_entities: true
+- suggest_entertainment:
+    use_entities: true
+- weather:
+    use_entities: true
+- city:
+    use_entities: true
+entities:
+- category
+slots: {}
+responses:
+  utter_greet:
+  - text: Hey! Welcome to your bot. What can I help you with.
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_city:
+  - text: which city do you want to check for?
+  utter_temp:
+  - text: Today's temperature is {temp} degree Celcius.
+actions:
+- actions_search_suggest
+- action_weather_api
+- utter_city
+- utter_temp
+forms: {}
+e2e_actions: []
